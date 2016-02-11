@@ -8,7 +8,7 @@ WebGL](http://blog.sumbera.com/2014/07/28/webgl-polygons-fill-with-libtess-js)
 
 
 [demo](http://codepen.io/mikefab/pen/YwdrXx)
-[![ScreenShot]()](http://youtu.be/vt5fpE0bzSY)
+
 [![Alt text for your video](http://img.youtube.com/vi/w8rDkgqiBzc/0.jpg)](https://youtu.be/w8rDkgqiBzc)
 
 ![alt tag](http://s12.postimg.org/6j9juvy8t/webgl_picking_geo_polygons.png)
