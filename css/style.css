@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgb(14, 21, 30);
+  height: 100%;
+}
+
+#infoWindow{  
+  position:absolute;
+  background-color:rgb(17, 69, 126);
+  color: white;
+  display:none;
+  padding:10px;
+  width:200px;
+  height:50px;
+  z-index:1;          
+}
+
+#map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+}

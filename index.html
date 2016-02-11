@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>Webgl libtess readPixels offscreen buffer</title>
+    <meta charset="utf-8">
+
+    <!-- vertex shader -->
+    <script id="vshader" type="x-shader/x-vertex">
+        uniform mat4 u_matrix;
+        attribute vec4 a_vertex;
+        attribute float a_pointSize;
+        attribute vec4 a_color;
+        varying vec4 v_color;
+
+        void main() {
+        // Set the size of the point
+        gl_PointSize =  a_pointSize;
+
+        // multiply each vertex by a matrix.
+        gl_Position = u_matrix * a_vertex;
+
+
+        // pass the color to the fragment shader
+        v_color = a_color;
+        }
+    </script>
+    <!-- fragment shader -->
+
+
+
+    <script id="fshader" type="x-shader/x-fragment">
+        precision mediump float;
+        varying vec4 v_color;
+
+        void main() {
+
+        gl_FragColor = v_color; //vec4(0.8, 0.1,0.1, 0.9); //v_color;
+      
+       }
+
+    </script>
+    <script src="http://www.sumbera.com/gist/js/libtess/libtess.cat.js"></script>
+
+</head>
+<body>
+    <div id='infoWindow'></div>
+    <div id="map" ></div>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="./js/L.CanvasOverlay.js"></script>
+    <script src='./data/CZDistricts.js'></script>
+    <script src="./js/main.js"></script>
+
+ 
+</body>
+</html>
