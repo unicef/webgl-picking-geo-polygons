@@ -5,6 +5,8 @@ Open index.html and mouse over a district to see its name.
 
 [demo](http://codepen.io/mikefab/pen/YwdrXx)
 
+![alt tag](http://s12.postimg.org/6j9juvy8t/webgl_picking_geo_polygons.png)
+
 #### Code and ideas taken heavily from: 
 - Stanislav Sumbera’s [Polygon libtess fill in WebGL](http://blog.sumbera.com/2014/07/28/webgl-polygons-fill-with-libtess-js)
 - Brendan Kenny's [Google Maps + HTML5 + Spatial Data Visualization]('https://www.youtube.com/watch?v=aZJnI6hxr-c')
