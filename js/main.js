@@ -18,7 +18,7 @@
                  polyVertArray[polyVertArray.length] = currentColor[0];
                  polyVertArray[polyVertArray.length] = currentColor[1];
                  polyVertArray[polyVertArray.length] = currentColor[2];
-                 polyVertArray[polyVertArray.length] = 0.4;
+                 polyVertArray[polyVertArray.length] = 1.0;
   
              }
              function begincallback(type) {
@@ -152,6 +152,7 @@
         // Just one color for polygons ononscreen buffer
         verts.map(function (b, i) {
           if(i%set_num==0){
+            verts2[i-1] =  0.4
             verts2[i-2] =  0.099
             verts2[i-3] = 0.079
             verts2[i-4] = 0.844
